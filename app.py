@@ -5,9 +5,9 @@ import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 
 # Specifying the canvas parameters in application
-stroke_width = st.sidebar.slider("Stroke width: ", 1, 25, 3)
-stroke_color = st.sidebar.color_picker("Stroke color hex: ")
-bg_color = st.sidebar.color_picker("Background color hex: ", "#eee")
+stroke_width = st.sidebar.slider("Stroke of width: ", 1, 25, 3)
+stroke_color = st.sidebar.color_picker("Stroke color: ")
+bg_color = st.sidebar.color_picker("Background color: ", "#eee")
 bg_image = st.sidebar.file_uploader("Background image:", type=["png", "jpg"])
 drawing_mode = st.sidebar.selectbox(
     "Drawing tool:", ("freedraw", "line", "rect", "circle")
